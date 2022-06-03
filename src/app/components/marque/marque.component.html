@@ -1,0 +1,23 @@
+<div *ngIf="isLoading">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<div class="container pb-5" *ngIf="!isLoading">
+    <h1 class="mt-5 mb-5 text-center">Tous les Marques de motos disponibles</h1>
+    
+    <div class="displayCard">
+        <div *ngFor="let marque of motoMarque" class="cardPerso">
+            <div [routerLink]="['/marque/', marque]">
+                <div class="headerCard">
+                    <h2>{{ marque }}</h2>
+                </div>
+                <div class="contentCard">
+                    <img *ngIf="marque === 'KTM'" src="../../../assets/image/KTM.png" alt="logo de KTM">
+                    <img *ngIf="marque === 'Yamaha'" src="../../../assets/image/yamaha.png" alt="logo de Yamaha">
+                    <img *ngIf="marque === 'Harley Davidson'" src="../../../assets/image/harley.png" alt="logo de harley Davidson">
+                    <img *ngIf="marque === 'Kawasaki'" src="../../../assets/image/kawasaki.png" alt="logo de Kawasaki">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

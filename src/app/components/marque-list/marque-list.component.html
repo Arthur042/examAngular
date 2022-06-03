@@ -1,0 +1,12 @@
+<div *ngIf="isLoading">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+<div class="container pb-5" *ngIf="!isLoading">
+    <h1 class="mt-5 mb-5 text-center">Les motos {{ currentMarque }}</h1>
+    <div class="row">
+        <div *ngFor="let moto of motos" class=" col-3">
+            <app-card [moto]="moto"></app-card>
+        </div>
+    </div>
+</div>

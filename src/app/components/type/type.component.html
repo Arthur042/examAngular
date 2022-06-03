@@ -1,0 +1,23 @@
+<div *ngIf="isLoading">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<div class="container pb-5" *ngIf="!isLoading">
+    <h1 class="mt-5 mb-5 text-center">Tous les types de motos disponibles</h1>
+
+    <div class="displayCard">
+        <div *ngFor="let type of motoTypes" class="cardPerso">
+            <div [routerLink]="['/type/', type]">
+                <div class="headerCard">
+                    <h2>{{ type }}</h2>
+                </div>
+                <div class="contentCard">
+                    <img *ngIf="type === 'Enduro'" src="../../../assets/image/motocross.png" alt="logo de moto Enduro">
+                    <img *ngIf="type === 'Sportive'" src="../../../assets/image/motorbikeSport.png" alt="logo de moto sportive">
+                    <img *ngIf="type === 'Roadster'" src="../../../assets/image/custom.png" alt="logo de moto Roadster">
+                    <img *ngIf="type === 'Custom'" src="../../../assets/image/motorbike.png" alt="logo de moto custom">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

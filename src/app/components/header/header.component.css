@@ -1,0 +1,20 @@
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+nav{
+    box-shadow: 0px 0px 7px 1px rgba(31, 31, 31, 0.541);
+}
+ul{
+    flex-direction: row;
+}
+li{
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+li:last-child{
+    margin-right: 0;
+}

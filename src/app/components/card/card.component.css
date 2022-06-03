@@ -1,0 +1,42 @@
+.example-card {
+    width: 270px;
+  }
+
+  img{
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  mat-card{
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      cursor: pointer;
+  }
+
+  mat-card-content{
+      margin-left: 1rem;
+    }
+
+    mat-card-actions{
+        width: 270px;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 4px, 4px, 0, 0;
+        background: rgb(173,173,173);
+        background: linear-gradient(59deg, rgba(173,173,173,1) 0%, rgba(124,124,124,1) 51%, rgba(67,199,59,1) 52%, rgba(20,242,2,1) 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    mat-card-actions p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }

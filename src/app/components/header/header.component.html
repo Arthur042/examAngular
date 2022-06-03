@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img src="../../../assets/image/logo.png" alt="logo du site" width="300" >
+      </a>
+        
+        <div class="text-center">
+            <h1>{{ motosNumber }} Annonces</h1>
+            <p>Exclusivement de Professionnels !</p>
+        </div>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/']">Accueil</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/type']">Voir les types</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/marque']">Voir les marques</a>
+            </li>
+        </ul>
+    </div>
+</nav>

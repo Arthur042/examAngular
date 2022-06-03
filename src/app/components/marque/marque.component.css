@@ -1,0 +1,46 @@
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img{
+    width: 150px;
+}
+.cardPerso{
+    width: 200px;
+    height: 220px;
+    padding: 1rem;
+    text-align: center;
+    transition: ease-in-out .25s;
+    margin-right: 2rem;
+}
+
+.cardPerso:last-child{
+    margin-right: 0;
+}
+
+.cardPerso:hover{
+    background-color: rgba(216, 216, 216, 0.787);
+    cursor: pointer;
+}
+
+.headerCard{
+    border-bottom: 1px solid rgba(17, 17, 17, 0.335);
+}
+h2{
+    margin: 0;
+}
+.displayCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentCard{
+    height: 186.89px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
